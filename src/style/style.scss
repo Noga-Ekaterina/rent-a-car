@@ -1,0 +1,18 @@
+@import "./medias";
+
+*{
+   margin: 0;
+   padding: 0;
+   color: #fff;
+}
+body{
+   background: #0A0A09;
+   padding: 10px;
+   overflow-x: hidden;
+}
+.content{
+   margin-inline: auto;
+   @include xl {
+      max-width: 1320px;
+   }
+}
