@@ -6,6 +6,9 @@
 }
 .logo{
    width: 90px;
+   *{
+      width: 100%;
+   }
 }
 
 .menu{
@@ -18,8 +21,19 @@
       position: absolute;
       right: -100vw;
       width: 100vw;
+      transition: 1s;
+      background: #0A0A09;
+      padding-top: 100px;
       *{
+         font-size: 18px;
+         font-weight: 500;
+         
          display: block;
+         width: fit-content;
+         margin: 10px auto;
+      }
+      &.open{
+         right: 0;
       }
    }
 
@@ -30,5 +44,12 @@
       &:hover{
          color: #5CBDB3
       }
+   }
+}
+.openMenu{
+   position: relative;
+   z-index: 2;
+   @include t-u {
+      display: none;
    }
 }
