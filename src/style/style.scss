@@ -1,9 +1,51 @@
 @import "./medias";
+@font-face {
+   font-family: "Muller";
+   font-weight: 300;
+   src: local("Muller")
+      url(fonts/Muller/MullerLight.eot) format("eot"),
+      url(fonts/Muller/MullerLight.ttf),
+      url(fonts/Muller/MullerLight.woff) format("woff"),
+      url(fonts/Muller/MullerLight.woff2) format("woff2")
+   ;
+}
+@font-face {
+   font-family: "Muller";
+   font-weight: 400;
+   src: local("Muller")
+      url("fonts/Muller/MullerRegular.eot") format("eot"),
+      url("fonts/Muller/MullerRegular.ttf") format("ttf"),
+      url("fonts/Muller/MullerRegular.woff") format("woff"),
+      url("fonts/Muller/MullerRegular.woff2") format("woff2")
+   ;
+}
+@font-face {
+   font-family: "Muller";
+   font-weight: 500;
+   src: local("Muller")
+      url("fonts/Muller/MullerMedium.eot") format("eot"),
+      url("fonts/Muller/MullerMedium.ttf") format("ttf"),
+      url("fonts/Muller/MullerMedium.woff") format("woff"),
+      url("fonts/Muller/MullerMedium.woff2") format("woff2")
+   ;
+}
+@font-face {
+   font-family: "Muller";
+   font-weight: 700;
+   src: local("Muller")
+      url("fonts/Muller/MullerBold.eot") format("eot"),
+      url("fonts/Muller/MullerBold.ttf") format("ttf"),
+      url("fonts/Muller/MullerBold.woff") format("woff"),
+      url("fonts/Muller/MullerBold.woff2") format("woff2")
+   ;
+}
 
 *{
    margin: 0;
    padding: 0;
+   font: 400 18px "Muller";
    color: #fff;
+   text-decoration: none;
 }
 body{
    background: #0A0A09;

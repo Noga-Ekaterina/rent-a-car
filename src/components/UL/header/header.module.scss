@@ -3,6 +3,7 @@
 .header{
    display: flex;
    justify-content: space-between;
+   align-items: center;
 }
 .logo{
    width: 90px;
@@ -21,11 +22,11 @@
       position: absolute;
       right: -100vw;
       width: 100vw;
+      height: 100vh;
       transition: 1s;
       background: #0A0A09;
       padding-top: 100px;
       *{
-         font-size: 18px;
          font-weight: 500;
          
          display: block;
@@ -38,11 +39,15 @@
    }
 
    &__item{
-      color: rgba(255, 255, 255, 0.40);
       transition: 1s;
+      @include t-u {
+         color: rgba(255, 255, 255, 0.40);
+      }
 
-      &:hover{
-         color: #5CBDB3
+      @include hover {
+         &:hover{
+            color: #5CBDB3
+         }
       }
    }
 }
