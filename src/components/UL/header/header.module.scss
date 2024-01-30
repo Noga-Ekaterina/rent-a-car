@@ -4,6 +4,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
+   padding-top: 20px;
 }
 .logo{
    width: 90px;
@@ -19,8 +20,11 @@
       justify-content: space-between;
    }
    @include mob {
-      position: absolute;
+      position: fixed;
+      z-index: 999;
       right: -100vw;
+      left: 100vw;
+      top: 0;
       width: 100vw;
       height: 100vh;
       transition: 1s;
@@ -35,6 +39,7 @@
       }
       &.open{
          right: 0;
+         left: 0;
       }
    }
 
@@ -53,7 +58,7 @@
 }
 .openMenu{
    position: relative;
-   z-index: 2;
+   z-index: 9999;
    @include t-u {
       display: none;
    }

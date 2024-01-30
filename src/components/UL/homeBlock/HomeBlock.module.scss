@@ -1,0 +1,102 @@
+@import "../../../style/medias";
+.content{
+   padding-top: clamp(60px, 9%, 115px);
+   @include t-u {
+      background-image: url(img/bacg.png);
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-size: 70%;
+   }
+   @include mob {
+      text-align: center;
+   }
+}
+.row{
+   @include t-u {
+      display: flex;
+      justify-content: space-between;
+   }
+}
+.title{
+   font-weight: 700;
+   font-size: clamp(40px, 4.68vw, 70px);
+   z-index: 2;
+   position: relative;
+}
+.light{
+   $light: #D4CC7B;
+   color: $light;
+   &_mob{
+      @include mob {
+         color: $light;
+      }
+   }
+}
+.gradient{
+   background: radial-gradient( rgba(93, 190, 180, 0.80) 22.12%, rgba(0, 0, 0, 0) 73.42%);
+   aspect-ratio:1/0.8;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   @include t-u {
+      width: 66%;
+      top: max(-7vw, -100px);
+   }
+   @include mob {
+      width: 160%;
+      left: min(0, (3 * (100vw - 500px) / 5));
+
+      padding-left: 5%;
+      margin-top: -28%;
+      margin-bottom: -25%;
+      max-width: 800px;
+   }
+   img{
+      width: 86%;
+      @include mob {
+         width: 66.7%;
+      }
+   }
+}
+.text{
+   text-wrap: nowrap;
+   flex-shrink: 0;
+   position: relative;
+   z-index: 2;
+   *{
+      display: block;
+      font-weight: 500;
+      margin-top: min(40px, 2.8vw);
+      @include mob {
+         margin-top: 35px;
+      }
+   }
+   p{
+      letter-spacing: -1.35px;
+      @include t-u {
+         font-size: clamp(20px, 2.1vw, 30px);
+         
+      }
+   }
+}
+.btn{
+   position: relative;
+   z-index: 3;
+   background: linear-gradient(280deg, #FFF -23.59%, #DBB500 115.07%);
+   border-radius: 30px;
+   box-shadow: 0px 0px 20px 0px #D6A500;
+   box-sizing: border-box;
+   padding: 18px;
+   color: #000;
+   font-size: 20px;
+   text-align: center;
+   @include t-u {
+      width: 59%;
+      font-size: clamp(18px, 1.6vw, 24px);
+   }
+   &.yesMob{
+      width: fit-content;
+      margin-inline: auto;
+   }
+}
