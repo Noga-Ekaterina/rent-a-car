@@ -1,0 +1,178 @@
+[
+   {
+      "id": 1,
+      "marca": "BMW",
+      "model": "i 325",
+      "name": "кабриолет",
+      "year": "2008",
+      "box": "автомат",
+      "motor": "2,5",
+      "tank": 204,
+      "gasoline": "95",
+      "price": {
+         "d1_2": "",
+         "d3_6": "",
+         "d7": ""
+      }
+   },
+   {
+      "id": 2,
+      "marca": "BMW",
+      "model": "i 325",
+      "name": "кабриолет",
+      "year": "2007",
+      "box": "автомат",
+      "motor": "2,5",
+      "tank": 204,
+      "gasoline": "95",
+      "price": {
+         "d1_2": "",
+         "d3_6": "",
+         "d7": ""
+      }
+   },
+   {
+      "id": 3,
+      "marca": "BMW",
+      "model": " 320",
+      "name": "кабриолет",
+      "year": 2009,
+      "box": "автомат",
+      "motor": "2,0",
+      "tank": 177,
+      "gasoline": "ДТ",
+      "price": {
+         "d1_2": "",
+         "d3_6": "",
+         "d7": ""
+      }
+   },
+   {
+      "id": 4,
+      "marca": "BMW",
+      "model": "Z4",
+      "name": "кабриолет",
+      "year": 2009,
+      "box": "автомат",
+      "motor": "2,5",
+      "tank": 204,
+      "gasoline": "95",
+      "price": {
+         "d1_2": "",
+         "d3_6": "",
+         "d7": ""
+      }
+   },
+   {
+      "id": 5,
+      "marca": "BMW",
+      "model": " 420D",
+      "name": "кабриолет",
+      "year": 2016,
+      "box": "автомат",
+      "motor": "2,0",
+      "tank": 190,
+      "gasoline": "ДТ",
+      "price": {
+         "d1_2": "",
+         "d3_6": "",
+         "d7": ""
+      }
+   },
+   {
+      "id": 6,
+      "marca": "Mercedes",
+      "model": " С180",
+      "name": "",
+      "year": 2012,
+      "box": "автомат",
+      "motor": "1,8",
+      "tank": 173,
+      "gasoline": "95",
+      "price": {
+         "d1_2": "",
+         "d3_6": "",
+         "d7": ""
+      }
+   },
+   {
+      "id": 7,
+      "marca": "Mercedes",
+      "model": "Viano",
+      "name": "",
+      "year": 2009,
+      "box": "автомат",
+      "motor": "2,2",
+      "tank": 150,
+      "gasoline": "ДТ",
+      "price": {
+         "d1_2": "",
+         "d3_6": "",
+         "d7": ""
+      }
+   },
+   {
+      "id": 8,
+      "marca": "KIA",
+      "model": "K5",
+      "name": "",
+      "year": 2020,
+      "box": "автомат",
+      "motor": "2,0",
+      "tank": 150,
+      "gasoline": "95",
+      "price": {
+         "d1_2": "",
+         "d3_6": "",
+         "d7": ""
+      }
+   },
+   {
+      "id": 9,
+      "marca": "KIA",
+      "model": "RIO",
+      "name": "",
+      "year": 2020,
+      "box": "автомат",
+      "motor": "1,6",
+      "tank": 123,
+      "gasoline": "95",
+      "price": {
+         "d1_2": "",
+         "d3_6": "",
+         "d7": ""
+      }
+   },
+   {
+      "id": 10,
+      "marca": "KIA",
+      "model": "RIO",
+      "name": "",
+      "year": 2020,
+      "box": "автомат",
+      "motor": "1,6",
+      "tank": 123,
+      "gasoline": "95",
+      "price": {
+         "d1_2": "",
+         "d3_6": "",
+         "d7": ""
+      }
+   },
+   {
+      "id": 11,
+      "marca": "Volkswagen",
+      "model": " Touareg",
+      "name": "",
+      "year": 2016,
+      "box": "автомат",
+      "motor": "2,5",
+      "tank": 245,
+      "gasoline": "ДТ",
+      "price": {
+         "d1_2": "",
+         "d3_6": "",
+         "d7": ""
+      }
+   }
+]
