@@ -9,6 +9,7 @@
    }
    @include mob {
       text-align: center;
+      padding-bottom: 150px;
    }
 }
 .row{
@@ -33,9 +34,10 @@
    }
 }
 .gradient{
-   background: radial-gradient( rgba(93, 190, 180, 0.80) 22.12%, rgba(0, 0, 0, 0) 73.42%);
+   background: radial-gradient( rgba(93, 190, 180, 0.80) 22.12%, rgba(0, 0, 0, 0) 71.42%);
    aspect-ratio:1/0.8;
    display: flex;
+   flex-shrink: 1;
    align-items: center;
    justify-content: center;
    position: relative;
@@ -45,15 +47,14 @@
    }
    @include mob {
       width: 160%;
-      left: min(0, (3 * (100vw - 500px) / 5));
-
+      left: clamp(-90px, calc((3*(100vw - 650px) / 13)), 0%);
       padding-left: 5%;
-      margin-top: -28%;
-      margin-bottom: -25%;
-      max-width: 800px;
+      margin-top: max(-28%, -140px);
+      margin-bottom: max(-25%, -130px);
+      max-width: 780px;
    }
    img{
-      width: 86%;
+      width: 84%;
       @include mob {
          width: 66.7%;
       }
@@ -74,6 +75,7 @@
    }
    p{
       letter-spacing: -1.35px;
+      word-spacing: 1.5px;
       @include t-u {
          font-size: clamp(20px, 2.1vw, 30px);
          
