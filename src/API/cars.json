@@ -1,0 +1,211 @@
+[
+   {
+      "id": 1,
+      "marca": "BMW",
+      "model": "i 325",
+      "name": "кабриолет",
+      "options":{
+         "year": 2008,
+         "box": "автомат",
+         "motor": "2,5",
+         "tank": 204,
+         "gasoline": "95"
+      },
+      "price": {
+         "d1_2": 5500,
+         "d3_6": 5000,
+         "d7": 4500,
+         "pledge": 30000
+      }
+   },
+   {
+      "id": 2,
+      "marca": "BMW",
+      "model": "i 325",
+      "name": "кабриолет",
+      "options":{
+         "year": 2007,
+         "box": "автомат",
+         "motor": "2,5",
+         "tank": 204,
+         "gasoline": "95"
+      },
+      "price": {
+         "d1_2": 5500,
+         "d3_6": 5000,
+         "d7": 4500,
+         "pledge": 30000
+      }
+   },
+   {
+      "id": 3,
+      "marca": "BMW",
+      "model": "320",
+      "name": "кабриолет",
+      "options":{
+         "year": 2009,
+         "box": "автомат",
+         "motor": "2,0",
+         "tank": 177,
+         "gasoline": "ДТ"
+      },
+      "price": {
+         "d1_2": 5500,
+         "d3_6": 5000,
+         "d7": 4500,
+         "pledge": 30000
+      }
+   },
+   {
+      "id": 4,
+      "marca": "BMW",
+      "model": "Z4",
+      "name": "кабриолет",
+      "options":{
+         "year": 2009,
+         "box": "автомат",
+         "motor": "2,5",
+         "tank": 204,
+         "gasoline": "95"
+      },
+      "price": {
+         "d1_2": 10000,
+         "d3_6": 8500,
+         "d7": 8500,
+         "pledge": 50000
+      }
+   },
+   {
+      "id": 5,
+      "marca": "BMW",
+      "model": "420D",
+      "name": "кабриолет",
+      "options":{
+         "year": 2016,
+         "box": "автомат",
+         "motor": "2,0",
+         "tank": 190,
+         "gasoline": "ДТ"
+      },
+      "price": {
+         "d1_2": 12000,
+         "d3_6": 10500,
+         "d7": 9500,
+         "pledge": 56000
+      }
+   },
+   {
+      "id": 6,
+      "marca": "Mercedes",
+      "model": "С180",
+      "name": "",
+      "options":{
+         "year": 2012,
+         "box": "автомат",
+         "motor": "1,8",
+         "tank": 173,
+         "gasoline": "95"
+      },
+      "price": {
+         "d1_2": 5500,
+         "d3_6": 5000,
+         "d7": 4500,
+         "pledge": 30000
+      }
+   },
+   {
+      "id": 7,
+      "marca": "Mercedes",
+      "model": "Viano",
+      "name": "",
+      "options":{
+         "year": 2009,
+         "box": "автомат",
+         "motor": "2,2",
+         "tank": 150,
+         "gasoline": "ДТ"
+      },
+      "price": {
+         "d1_2": 5500,
+         "d3_6": 5000,
+         "d7": 4500,
+         "pledge": 30000
+      }
+   },
+   {
+      "id": 8,
+      "marca": "KIA",
+      "model": "K5",
+      "name": "",
+      "options":{
+         "year": 2020,
+         "box": "автомат",
+         "motor": "2,0",
+         "tank": 150,
+         "gasoline": "95"
+      },
+      "price": {
+         "d1_2": 5500,
+         "d3_6": 5000,
+         "d7": 4500,
+         "pledge": 30000
+      }
+   },
+   {
+      "id": 9,
+      "marca": "KIA",
+      "model": "RIO",
+      "name": "",
+      "options":{
+         "year": 2020,
+         "box": "автомат",
+         "motor": "1,6",
+         "tank": 123,
+         "gasoline": "95"
+      },
+      "price": {
+         "d1_2": 5700,
+         "d3_6": 5000,
+         "d7": 4600,
+         "pledge": 34000
+      }
+   },
+   {
+      "id": 10,
+      "marca": "KIA",
+      "model": "RIO",
+      "name": "",
+      "options":{
+         "year": 2020,
+         "box": "автомат",
+         "motor": "1,6",
+         "tank": 123,
+         "gasoline": "95"
+      },
+      "price": {
+         "d1_2": 7500,
+         "d3_6": 65000,
+         "d7": 5200,
+         "pledge": 40000
+      }
+   },
+   {
+      "id": 11,
+      "marca": "Volkswagen",
+      "model": "Touareg",
+      "name": "",
+      "options":{
+         "year": 2016,
+         "box": "автомат",
+         "motor": "2,5",
+         "tank": 245,
+         "gasoline": "ДТ"
+      },
+      "price": {
+         "d1_2": 12000,
+         "d3_6": 10500,
+         "d7": 9500,
+         "pledge": 58000
+      }
+   }
+]

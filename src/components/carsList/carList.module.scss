@@ -1,0 +1,91 @@
+@import "../../style/medias";
+.carList{
+   margin-top: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   position: relative;
+   @include mob {
+      max-width: 400px;
+   }
+   
+   .item{
+      z-index: 2;
+      box-sizing: border-box;
+      border: 1px solid rgba(126, 126, 126, 0.4);
+      box-shadow: 0px 4px 10px 0px rgba(124, 124, 124, 0.2);
+      background: #0b0d0f;
+      padding: 20px 10px;
+      >*{
+         margin-bottom: 20px;
+      }
+      @include mob {
+         width: 100%;
+      }
+      @include t {
+         width: calc(50% - 20px);
+      }
+      @include xl {
+         min-width: 377px;
+      }
+   }
+   .bigImg{
+      margin-top: 10px;
+      margin-bottom: 14px;
+      img{
+         width: 100%;
+      }
+   }
+   .title{
+      margin-bottom: 0;
+      @include t-u {
+         *{
+            font-size: 24px;
+         }
+      }
+   }
+   .priceAndBtn{
+      margin-bottom: 0;
+      text-align: center;
+      @include t-u {
+         *{ 
+            font-size: 24px;
+            font-weight: 500;
+         }
+      }
+      @include mob {
+         display: flex;
+         justify-content: space-around;
+         align-items: baseline;
+         flex-wrap: wrap;
+         row-gap: 10px;
+      }
+      .btn{
+         @include t-u {
+            box-sizing: border-box;
+            width: 80%;
+            margin-inline: auto;
+            margin-top: 20px;
+            padding: 18px;
+            border: 1px solid rgb(236, 215, 116);
+            border-radius: 30px;
+            box-shadow: 0px 0px 5px 0px rgb(214, 165, 0);
+         }
+         @include mob {
+            font-size: 14px;
+         }
+      }
+   }
+}
+
+.gradient{
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   width: 64.8%;
+   left: 17.6%;
+   z-index: 1;
+   border-radius: 50%;
+   filter: blur(150px);
+   background: linear-gradient(169.43deg, rgba(93, 190, 180, 0.2) -5.131%,rgba(49, 149, 145, 0.2) 124.639%);
+}
