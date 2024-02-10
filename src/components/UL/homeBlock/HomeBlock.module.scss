@@ -21,18 +21,11 @@
 .title{
    font-weight: 700;
    font-size: clamp(40px, 4.68vw, 70px);
+   font-style: italic;
    z-index: 2;
    position: relative;
 }
-.light{
-   $light: #D4CC7B;
-   color: $light;
-   &_mob{
-      @include mob {
-         color: $light;
-      }
-   }
-}
+
 .gradient{
    background: radial-gradient( rgba(93, 190, 180, 0.80) 22.12%, rgba(0, 0, 0, 0) 71.42%);
    aspect-ratio:1/0.8;

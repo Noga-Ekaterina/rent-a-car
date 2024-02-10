@@ -33,16 +33,28 @@
    font-family: "Muller";
    font-weight: 700;
    src: local("Muller")
-      url("fonts/Muller/MullerBold.eot") format("eot"),
-      url("fonts/Muller/MullerBold.ttf") format("ttf"),
-      url("fonts/Muller/MullerBold.woff") format("woff"),
-      url("fonts/Muller/MullerBold.woff2") format("woff2")
+      url("fonts/Muller/MullerBoldItalic.eot") format("eot"),
+      url("fonts/Muller/MullerBoldItalic.ttf") format("ttf"),
+      url("fonts/Muller/MullerBoldItalic.woff") format("woff"),
+      url("fonts/Muller/MullerBoldItalic.woff2") format("woff2")
+   ;
+}
+@font-face {
+   font-family: "Muller";
+   font-weight: 700;
+   font-style: italic;
+   src: local("Muller")
+      url("fonts/Muller/MullerBoldItalic.eot") format("eot"),
+      url("fonts/Muller/MullerBoldItalic.ttf") format("ttf"),
+      url("fonts/Muller/MullerBoldItalic.woff") format("woff"),
+      url("fonts/Muller/MullerBoldItalic.woff2") format("woff2")
    ;
 }
 
 *{
    margin: 0;
    padding: 0;
+   letter-spacing: calc(-0.01em * 4.5);
    font: 400 18px "Muller";
    color: #fff;
    text-decoration: none;
@@ -60,12 +72,21 @@ body{
    overflow: hidden;
    @include t-u {
       padding-inline: 20px;
-      max-width: 1340px;
+      max-width: 1215px;
    }
 }
 strong{
    font-size: inherit;
    font-weight: inherit;
+}
+.light{
+   $light: #D4CC7B;
+   color: $light;
+   &_mob{
+      @include mob {
+         color: $light;
+      }
+   }
 }
 
 .yesMob{
@@ -77,4 +98,10 @@ strong{
    @include mob {
       display: none;
    }
+}
+h2{
+   text-align: center;
+   font-size: clamp(32px, 3.3vw, 48px);
+   font-style: italic;
+   font-weight: 700;
 }
