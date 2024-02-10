@@ -40,7 +40,7 @@
    }
    @include mob {
       width: 160%;
-      left: clamp(-90px, calc((3*(100vw - 650px) / 13)), 0%);
+      left: clamp(-65px, calc((3*(100vw - 650px) / 13)), 0%);
       padding-left: 5%;
       margin-top: max(-28%, -140px);
       margin-bottom: max(-25%, -130px);
@@ -54,10 +54,12 @@
    }
 }
 .text{
-   text-wrap: nowrap;
    flex-shrink: 0;
    position: relative;
    z-index: 2;
+   @include t-u {
+      text-wrap: nowrap;
+   }
    *{
       display: block;
       font-weight: 500;
