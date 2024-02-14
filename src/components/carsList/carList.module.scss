@@ -61,6 +61,7 @@
          row-gap: 10px;
       }
       .btn{
+         cursor: pointer;
          @include t-u {
             box-sizing: border-box;
             width: 80%;

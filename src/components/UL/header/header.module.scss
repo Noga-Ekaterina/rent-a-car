@@ -54,6 +54,10 @@
             color: #5CBDB3
          }
       }
+      &.active{
+         color: #5CBDB3;
+         pointer-events: none;
+      }
    }
 }
 .openMenu{

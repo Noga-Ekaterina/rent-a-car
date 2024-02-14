@@ -1,6 +1,7 @@
 import React from 'react';
 import CarTitle from './UL/carTitle/CarTitle';
 import CarOptions from './UL/carOptions/CarOptions';
+import { useNavigate } from 'react-router-dom';
 
 function CarItemHome({ id, cls, title, options, price }) {
    function findMin(obj) {
@@ -12,6 +13,7 @@ function CarItemHome({ id, cls, title, options, price }) {
       }
       return min;
    }
+   const route= useNavigate()
    return (
       <div className={cls.item}>
          <CarTitle title={title} newCls={cls.title} />
@@ -21,7 +23,7 @@ function CarItemHome({ id, cls, title, options, price }) {
          <CarOptions options={options} />
          <div className={cls.priceAndBtn}>
             <div className={cls.price}>от {findMin(price)} р. / сутки</div>
-            <div className={cls.btn}>Арендовать авто</div>
+            <div className={cls.btn} onClick={()=> route(`/${id}`)}>Арендовать авто</div>
          </div>
       </div>
    );

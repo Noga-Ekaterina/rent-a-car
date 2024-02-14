@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import cls from "./header.module.scss"
 
 function Header() {
@@ -8,6 +8,25 @@ function Header() {
    if (openMenu){
       classMenu.push(cls.open)
    }
+
+   const [links, setLinks]= useState([
+      {to: "/", name: "Наш парк"},
+      {to: "/rent-terms", name: "Условия аренды"},
+      {to: "/comments", name:"Отзывы"},
+      {to: "/contacts", name: "Контакты"}
+   ])
+   
+   const pathname= useLocation().pathname
+   useEffect(()=>{
+      console.log(pathname);
+      const updatedLinks = links.map(link => ({
+         ...link,
+         cls: link.to === pathname ? `${cls.menu__item} ${cls.active}` : cls.menu__item
+      }));
+      setLinks(updatedLinks)
+   }, [pathname])
+
+   const closeMenu=()=> setOpenMenu(false);
    return ( 
       <header className={[cls.header, "content"].join(" ")}>
          <div className={cls.logo}>
@@ -17,14 +36,15 @@ function Header() {
             </picture>
          </div>
          <div className={classMenu.join(" ")}>
-            <Link to="/" className={cls.menu__item}>Наш парк</Link>
-            <Link to="/rent-terms" className={cls.menu__item}>Условия аренды</Link>
-            <Link to="/comments" className={cls.menu__item}>Отзывы</Link>
-            <Link to="/contacts" className={cls.menu__item}>Контакты</Link>
+            {
+               links.map((link, index)=>
+                  <Link to={link.to} onClick={closeMenu} className={link.cls} key={index}>{link.name}</Link>   
+               )
+            }
             <a href="tel:+79781173839">+79781173839</a>
          </div>
          <div className={cls.openMenu} onClick={()=> 
-            openMenu?setOpenMenu(false) :setOpenMenu(true)
+            openMenu?closeMenu() :setOpenMenu(true)
          }>
             <img src="img/open_menu.png" />
          </div>
