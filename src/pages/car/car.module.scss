@@ -1,0 +1,17 @@
+@import "../../style/medias";
+
+.carPage{
+   @include t-u {
+      display: flex;
+      justify-content: space-between;
+      padding-inline: 75px !important;
+      padding-top: 55px;
+   }
+}
+.title{
+   @include t-u {
+      *{
+         font-size: clamp(20px, 2.5vw, 35px);
+      }
+   }
+}

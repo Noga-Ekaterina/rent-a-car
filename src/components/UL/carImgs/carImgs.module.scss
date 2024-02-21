@@ -1,0 +1,25 @@
+@import "../../../style/medias";
+.imgs{
+   @include t-u {
+      width: 41.3%;
+      box-sizing: border-box;
+      border: 1px solid #6b6b6b;
+      border-radius: 10px;
+      padding: 25px 17px;
+      box-shadow: 0px 4px 10px 0px rgba(75, 152, 144, 0.2);
+      background: #0d100f;
+   }
+   img{
+      width: 100%;
+   }
+}
+.minImgs{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   column-gap: 10px;
+   margin-top: 17px;
+   @include mob {
+      display: none;
+   }
+}

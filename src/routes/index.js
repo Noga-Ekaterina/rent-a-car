@@ -1,4 +1,4 @@
-import Car from "../pages/Car";
+import Car from "../pages/car/Car";
 import Comments from "../pages/Comments";
 import Contacts from "../pages/Contacts";
 import Home from "../pages/Home";

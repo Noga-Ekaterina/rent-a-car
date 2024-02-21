@@ -1,0 +1,17 @@
+.price{
+   width: 100%;
+   border-spacing: 0;
+   &__table tr{
+      border: 0 solid rgba(255, 255, 255, 0.4);
+      border-right: 1px;
+   }
+   &__td{
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-right: 0;
+      border-bottom: 0;
+      padding: 10px;
+      &:last-child{
+         border-right: 1px;
+      }
+   }
+}
