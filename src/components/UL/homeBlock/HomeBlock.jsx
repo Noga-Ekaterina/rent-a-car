@@ -11,12 +11,12 @@ function HomeBlock() {
                <p>Доставка в любую точку Крыма</p>
                <p>Бесплатно доп. аксессуары</p>
                <p>Любой способ оплаты</p>
-               <a href="" className={[cls.btn, "noMob"].join(" ")}>Выбрать авто</a>
+               <a href="#carList" className={[cls.btn, "noMob"].join(" ")}>Выбрать авто</a>
             </div>
             <div className={cls.gradient}>
                <img src={car} alt="" />
             </div>
-            <a href="" className={[cls.btn, "yesMob"].join(" ")}>Выбрать авто</a>
+            <a href="#carList" className={[cls.btn, "yesMob"].join(" ")}>Выбрать авто</a>
          </div>
       </div>
    );

@@ -5,7 +5,7 @@ import cls from "./carList.module.scss"
 
 function CarList() {
    return ( 
-      <div className={["content", cls.carList].join(" ")}>
+      <div className={["content", cls.carList].join(" ")} id='carList'>
          <div className={[cls.gradient, "noMob"].join(" ")}></div>
          {cars.map((car)=>
             <CarItemHome key={car.id} id={car.id} 
