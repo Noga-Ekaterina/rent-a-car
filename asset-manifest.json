@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rent-a-car/static/css/main.a5b84126.css",
-    "main.js": "/rent-a-car/static/js/main.858a8d47.js",
+    "main.css": "/rent-a-car/static/css/main.cc063da7.css",
+    "main.js": "/rent-a-car/static/js/main.606eb15f.js",
     "static/media/car.png": "/rent-a-car/static/media/car.08c6e8d322bb81afcc3f.png",
     "static/media/MullerBoldItalic.eot": "/rent-a-car/static/media/MullerBoldItalic.7186182aba024b8bdbdf.eot",
     "static/media/MullerBoldItalic.ttf": "/rent-a-car/static/media/MullerBoldItalic.da1a102049f949b7f0fc.ttf",
@@ -20,11 +20,11 @@
     "static/media/MullerLight.woff2": "/rent-a-car/static/media/MullerLight.1ead00b17d9bfd3216a3.woff2",
     "static/media/MullerRegular.woff2": "/rent-a-car/static/media/MullerRegular.33ae73af0bab56f7dd13.woff2",
     "index.html": "/rent-a-car/index.html",
-    "main.a5b84126.css.map": "/rent-a-car/static/css/main.a5b84126.css.map",
-    "main.858a8d47.js.map": "/rent-a-car/static/js/main.858a8d47.js.map"
+    "main.cc063da7.css.map": "/rent-a-car/static/css/main.cc063da7.css.map",
+    "main.606eb15f.js.map": "/rent-a-car/static/js/main.606eb15f.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5b84126.css",
-    "static/js/main.858a8d47.js"
+    "static/css/main.cc063da7.css",
+    "static/js/main.606eb15f.js"
   ]
 }
