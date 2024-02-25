@@ -4,7 +4,7 @@ import cls from "./carTitle.module.scss"
 function CarTitle({title, newCls}) {
    return (
       <div className={[cls.carTitle, newCls].join(" ")}>
-         <div><img src={`img/cars/marca/${title.marca}.svg`} alt="" /></div>
+         <div><img src={`/rent-a-car/img/cars/marca/${title.marca}.svg`} alt="" /></div>
          <div>
             {title.marca} <span className="light">{title.model}</span> {title.name}
          </div>

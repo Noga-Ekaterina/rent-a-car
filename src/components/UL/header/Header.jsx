@@ -10,10 +10,10 @@ function Header() {
    }
 
    const [links, setLinks]= useState([
-      {to: "/", name: "Наш парк"},
-      {to: "/rent-terms", name: "Условия аренды"},
-      {to: "/comments", name:"Отзывы"},
-      {to: "/contacts", name: "Контакты"}
+      {to: "/rent-a-car/", name: "Наш парк"},
+      {to: "/rent-a-car/rent-terms", name: "Условия аренды"},
+      {to: "/rent-a-car/comments", name:"Отзывы"},
+      {to: "/rent-a-car/contacts", name: "Контакты"}
    ])
    
    const pathname= useLocation().pathname

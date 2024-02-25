@@ -6,10 +6,10 @@ import Home from "../pages/Home";
 import RentTerms from "../pages/RentTerms";
 
 export default [
-   {path: "/", element: <Home/>},
-   {path: "/rent-terms", element: <RentTerms/>},
-   {path: "/comments", element: <Comments/>},
-   {path: "/contacts", element: <Contacts/>},
-   {path: "/car/:id", element: <Car/>},
-   {path:'*', element: <Navigate to="/" replace/>},
+   {path: "/rent-a-car/", element: <Home/>},
+   {path: "/rent-a-car/rent-terms", element: <RentTerms/>},
+   {path: "/rent-a-car/comments", element: <Comments/>},
+   {path: "/rent-a-car/contacts", element: <Contacts/>},
+   {path: "/rent-a-car/car/:id", element: <Car/>},
+   {path:'*', element: <Navigate to="/rent-a-car/" replace/>},
 ];

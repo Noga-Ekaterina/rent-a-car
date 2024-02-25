@@ -23,7 +23,7 @@ function CarItemHome({ id, cls, title, options, price }) {
          <CarOptions options={options} />
          <div className={cls.priceAndBtn}>
             <div className={cls.price}>от {findMin(price)} р. / сутки</div>
-            <div className={cls.btn} onClick={()=> route(`/car/${id}`)}>Арендовать авто</div>
+            <div className={cls.btn} onClick={()=> route(`/rent-a-car/car/${id}`)}>Арендовать авто</div>
          </div>
       </div>
    );
