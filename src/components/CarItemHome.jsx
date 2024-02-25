@@ -18,12 +18,12 @@ function CarItemHome({ id, cls, title, options, price }) {
       <div className={cls.item}>
          <CarTitle title={title} newCls={cls.title} />
          <div className={cls.bigImg}>
-            <img src={`img/cars/carsPhoto/id_${id}/home.png`} alt="" />
+            <img src={`/rent-a-car/img/cars/carsPhoto/id_${id}/home.png`} alt="" />
          </div>
          <CarOptions options={options} />
          <div className={cls.priceAndBtn}>
             <div className={cls.price}>от {findMin(price)} р. / сутки</div>
-            <div className={cls.btn} onClick={()=> route(`/${id}`)}>Арендовать авто</div>
+            <div className={cls.btn} onClick={()=> route(`/car/${id}`)}>Арендовать авто</div>
          </div>
       </div>
    );

@@ -31,8 +31,8 @@ function Header() {
       <header className={[cls.header, "content"].join(" ")}>
          <div className={cls.logo}>
             <picture>
-               <source media="(max-width: 767px)" srcSet="img/logo2.png" />
-               <img src="img/logo.png" alt="" />
+               <source media="(max-width: 767px)" srcSet="/rent-a-car/img/logo2.png" />
+               <img src="/rent-a-car/img/logo.png" alt="" />
             </picture>
          </div>
          <div className={classMenu.join(" ")}>

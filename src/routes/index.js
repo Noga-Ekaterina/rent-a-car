@@ -1,3 +1,4 @@
+import { Navigate } from "react-router-dom";
 import Car from "../pages/car/Car";
 import Comments from "../pages/Comments";
 import Contacts from "../pages/Contacts";
@@ -9,5 +10,6 @@ export default [
    {path: "/rent-terms", element: <RentTerms/>},
    {path: "/comments", element: <Comments/>},
    {path: "/contacts", element: <Contacts/>},
-   {path: "/:id", element: <Car/>}
+   {path: "/car/:id", element: <Car/>},
+   {path:'*', element: <Navigate to="/" replace/>},
 ];
