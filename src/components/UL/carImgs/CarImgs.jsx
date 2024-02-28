@@ -10,7 +10,9 @@ function CarImgs({id, newCls}) {
          <div className={cls.minImgs}>
             {
                arrImgs.map(item=>
-                  <div key={item} onClick={()=> setBigImg(item)}><img src={`/rent-a-car/img/cars/carsPhoto/id_${id}/${item}min.webp`} alt="" /></div>
+                  <div key={item} className={[cls.minImgs__item, item==bigImg&& cls.active].join(" ")} onClick={()=> setBigImg(item)}>
+                     <img src={`/rent-a-car/img/cars/carsPhoto/id_${id}/${item}min.webp`} alt="" />
+                  </div>
                )
             }
          </div>

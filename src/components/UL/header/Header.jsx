@@ -46,7 +46,7 @@ function Header() {
          <div className={cls.openMenu} onClick={()=> 
             openMenu?closeMenu() :setOpenMenu(true)
          }>
-            <img src="img/open_menu.png" alt=''/>
+            <img src="/rent-a-car/img/open_menu.png" alt=''/>
          </div>
       </header>
    );

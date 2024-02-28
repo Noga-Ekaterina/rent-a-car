@@ -1,17 +1,46 @@
 @import "../../style/medias";
 
 .carPage{
+   overflow: visible !important;
    @include t-u {
       display: flex;
       justify-content: space-between;
       padding-inline: 75px !important;
       padding-top: 55px;
    }
+   @include mob {
+      max-width: 450px;
+   }
+}
+.imgsAndBtn{
+   @include t-u {
+      width: 41.3%;
+   }
+   @include mob {
+      margin-bottom: 24px;
+   }
 }
 .title{
+   margin-bottom: 24px;
    @include t-u {
+      margin-bottom: 11.5%;
       *{
-         font-size: clamp(20px, 2.5vw, 35px);
+         font-size: clamp(24px, 2.5vw, 35px);
       }
+   }
+}
+.carContent{
+   position: relative;
+   *{
+      position: relative;
+      z-index: 2;
+   }
+   &__gradient{
+      position: absolute;
+      z-index: 1;
+      inset: 10px;
+      top: 40px;
+      filter: blur(155px);
+      background: linear-gradient(169.43deg, rgb(93, 190, 180) 3.389%,rgba(49, 149, 145, 0.2) 115.083%);
    }
 }
