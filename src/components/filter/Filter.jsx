@@ -3,11 +3,13 @@ import cls from "./filter.module.scss"
 import Btn from '../UL/btn/Btn';
 import DetailsChecbox from './details/DetailsCheckbox';
 import InputsMinMax from './inputsMinMax/InputsMinMax';
+import {useClose} from "../../hoocs/useClose";
 
 function Filter({cars, filter, setFilter}) {
-   const [open, setOpen] = useState(false);
-   const filteRef= useRef(null);
+   const [isOpen, setIsOpen] = useState(false);
+   const filterRef= useRef(null);
 
+   useClose(filterRef, isOpen, setIsOpen);
 
    const newArr = (option, obj) => {
       const newArr = []
@@ -52,17 +54,18 @@ function Filter({cars, filter, setFilter}) {
          gasoline: checkbox.gasoline,
          price: valueMinMax.price
       })
-      setOpen(false)
+      setIsOpen(false)
    }
+
    return (
        <>
           <div className={ cls.filter__openWrapper}>
-             <Btn newCls={cls.filter__openBtn} onClick={() => setOpen(true)}>Фильтр</Btn>
+             <Btn newCls={cls.filter__openBtn} onClick={() => setIsOpen(true)}>Фильтр</Btn>
           </div>
-          <div className={[cls.filter__wrapper, open && cls.open].join(' ')}>
+          <div ref={filterRef} className={[cls.filter__wrapper, isOpen && cls.open].join(' ')}>
              <div className={cls.filter__header}>
                 <div className={cls.filter__title}>Фильтр</div>
-                <div className={cls.filter__close} onClick={() => setOpen(false)}>x</div>
+                <div className={cls.filter__close} onClick={() => setIsOpen(false)}>x</div>
              </div>
 
              <form method='post' className={cls.filter} onSubmit={ev => submitForm(ev)}>
