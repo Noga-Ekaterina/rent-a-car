@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import HomeBlock from '../components/UL/homeBlock/HomeBlock';
-import cars from "../API/cars.json"
-import CarList from '../components/carsList/CarsList';
-import Filter from '../components/filter/Filter';
-import { useFilter } from '../hoocs/useFilter';
+import HomeBlock from './homeBlock/HomeBlock';
+import cars from "../../API/cars.json"
+import CarList from '../../components/carsList/CarsList';
+import Filter from '../../components/filter/Filter';
+import { useFilter } from '../../hoocs/useFilter';
 
 function Home() {
    const [filter, setFilter] = useState({

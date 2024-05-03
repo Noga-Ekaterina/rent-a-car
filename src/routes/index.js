@@ -2,7 +2,7 @@ import { Navigate } from "react-router-dom";
 import Car from "../pages/car/Car";
 import Comments from "../pages/Comments";
 import Contacts from "../pages/Contacts";
-import Home from "../pages/Home";
+import Home from "../pages/home/Home";
 import RentTerms from "../pages/rentTerms/RentTerms";
 
 export default [

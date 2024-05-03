@@ -1,5 +1,5 @@
 import React from 'react';
-import CarItemHome from '../CarItemHome';
+import CarItemHome from './CarItemHome';
 import cls from "./carList.module.scss"
 
 function CarList({cars}) {

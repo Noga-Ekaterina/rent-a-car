@@ -1,8 +1,8 @@
 import React from 'react';
-import CarTitle from './UL/carTitle/CarTitle';
-import CarOptions from './UL/carOptions/CarOptions';
+import CarTitle from '../UL/carTitle/CarTitle';
+import CarOptions from '../UL/carOptions/CarOptions';
 import { useNavigate } from 'react-router-dom';
-import { findMin } from '../utils/findMin';
+import { findMin } from '../../utils/findMin';
 
 function CarItemHome({ id, cls, title, options, price }) {
    const route= useNavigate()
