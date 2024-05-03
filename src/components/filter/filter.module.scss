@@ -1,0 +1,105 @@
+@import "/src/style/medias";
+.filter{
+  $width-filter: min(270px, 100vw);
+
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+   @include xl {
+     position: relative;
+     flex-direction: row;
+     justify-content: space-between;
+   }
+
+  &__wrapper{
+    box-sizing: border-box;
+    z-index: 5;
+
+    &.open{
+      right: 0;
+      -webkit-box-shadow: -65px 4px 28px 1px rgba(0, 0, 0, 0.7);
+      -moz-box-shadow: -65px 4px 28px 1px rgba(0, 0, 0, 0.7);
+      box-shadow: -65px 4px 28px 1px rgba(0, 0, 0, 0.7);
+    }
+
+    @include mob-and-t{
+      position: fixed;
+      width: $width-filter;
+      right: calc($width-filter * -1);
+      top: 0;
+      bottom: 0;
+      height: 100vh;
+      overflow: auto;
+      transition: 1s;
+      background: #0A0A09;
+      padding: 20px;
+    }
+  }
+
+  *{
+    text-wrap: nowrap
+  }
+
+  &__open{
+    &Wrapper{
+      display: flex;
+      justify-content: flex-end;
+    }
+    &Btn{
+      width: auto;
+      margin: 0;
+    }
+  }
+
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    background: #0A0A09;
+  }
+
+  &__openWrapper,
+  &__header{
+    @include xl {
+      display: none;
+    }
+  }
+
+  &__title{
+    font-size: 26px;
+  }
+
+  &__close{
+    font-size: 34px;
+    color: #5CBDB3;
+
+    @include hover{
+      cursor: pointer;
+    }
+  }
+
+  &__btn{
+    width: auto;
+    margin: 0;
+
+    @include mob-and-t{
+      width: 100%;
+    }
+
+    &Wrapper{
+      @include mob-and-t{
+        width: calc($width-filter - 40px);
+        background: #0A0A09;
+        position: fixed;
+        bottom: 0;
+        padding-block: 10px 20px;
+      }
+    }
+  }
+}

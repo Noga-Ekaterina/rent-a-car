@@ -1,0 +1,34 @@
+@import "src/style/medias";
+
+.detailsCheckbox{
+  position: relative;
+
+  &__title{
+    cursor: pointer;
+
+    &::before {
+      content: '\25BA';
+
+      .open & {
+        content: '\25BC';
+      }
+    }
+  }
+
+  &__content{
+    display: none;
+    border-top-width: 0;
+    padding: 10px;
+
+    @include xl{
+      position: absolute;
+      min-width: 100%;
+      background: #0d100f;
+      border: 1px solid rgba(126, 126, 126, 0.4);
+    }
+
+    .open &{
+      display: block;
+    }
+  }
+}

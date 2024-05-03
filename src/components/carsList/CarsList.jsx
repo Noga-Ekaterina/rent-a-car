@@ -1,11 +1,10 @@
 import React from 'react';
-import cars from '../../API/cars.json'
 import CarItemHome from '../CarItemHome';
 import cls from "./carList.module.scss"
 
-function CarList() {
+function CarList({cars}) {
    return ( 
-      <div className={["content", cls.carList].join(" ")} id='carList'>
+      <div className={cls.carList} id='carList'>
          <div className={[cls.gradient, "noMob"].join(" ")}></div>
          {cars.map((car)=>
             <CarItemHome key={car.id} id={car.id} 

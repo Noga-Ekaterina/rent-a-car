@@ -4,12 +4,12 @@
    }
 };
 @mixin mob-and-t{
-   @media screen and (max-width: 1439px) {
+   @media screen and (max-width: 1199px) {
       @content
    }
 };
 @mixin t{
-   @media screen and (min-width: 768px) and (max-width: 1439px) {
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
       @content
    }
 };
@@ -21,7 +21,7 @@
 };
 
 @mixin xl{
-   @media screen and (min-width: 1440px) {
+   @media screen and (min-width: 1220px) {
       @content
    }
 };

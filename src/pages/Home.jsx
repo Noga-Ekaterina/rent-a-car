@@ -1,13 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import HomeBlock from '../components/UL/homeBlock/HomeBlock';
+import cars from "../API/cars.json"
 import CarList from '../components/carsList/CarsList';
+import Filter from '../components/filter/Filter';
+import { useFilter } from '../hoocs/useFilter';
 
 function Home() {
+   const [filter, setFilter] = useState({
+      marca: [],
+      year: {
+         min: "",
+         max: ""
+      },
+      motor:  {
+         min: "",
+         max: ""
+      },
+      horsepower: {
+         min: "",
+         max: ""
+      },
+      gasoline:[],
+      price: {
+         min: "",
+         max: ""
+      }
+   });
+   const carsFilter= useFilter(cars, filter)
+   console.log(filter);
    return ( 
-      <div>
+      <div className='content'>
          <HomeBlock/>
          <h2>Наш <strong className="light">автопарк</strong></h2>
-         <CarList/>
+         <Filter cars={cars} filter={filter} setFilter={setFilter}/>
+         <CarList cars={carsFilter}/>
       </div>
    );
 }

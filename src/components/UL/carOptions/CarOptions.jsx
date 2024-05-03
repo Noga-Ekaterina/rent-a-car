@@ -22,9 +22,9 @@ function CarOptions({options}) {
          <div className={cls.carOptions__motor}>
             <div className={cls.imgAndText}>
                <img src={motor} alt="" />
-               <p>{options.motor}</p>
+               <p>{String(options.motor).replace(".", ",")}</p>
             </div>
-            <p>{options.tank} л.с.</p>
+            <p>{options.horsepower} л.с.</p>
          </div>
          <div className={cls.carOptions__gasoline}>
             <div className=""><img src={gasoline} alt="" /></div>

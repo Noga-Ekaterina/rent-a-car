@@ -4,7 +4,7 @@ import car from "./img/car.png"
 
 function HomeBlock() {
    return ( 
-      <div className={["content", cls.content].join(" ")}>
+      <div className={cls.content}>
          <h1 className={cls.title}>Аренда <strong className="light">экслюзив&shy;ных</strong> <strong className='light_mob'>авто</strong> в Крыму</h1>
          <div className={cls.row}>
             <div className={cls.text}>
