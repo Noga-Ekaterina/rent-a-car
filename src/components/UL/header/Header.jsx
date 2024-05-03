@@ -28,7 +28,7 @@ function Header() {
 
    const closeMenu=()=> setOpenMenu(false);
    return ( 
-      <header className={[cls.header, "content"].join(" ")}>
+      <header className={cls.header}>
          <div className={cls.logo}>
             <picture>
                <source media="(max-width: 767px)" srcSet="/rent-a-car/img/logo2.png" />

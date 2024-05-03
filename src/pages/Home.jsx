@@ -29,12 +29,12 @@ function Home() {
    const carsFilter= useFilter(cars, filter)
    console.log(filter);
    return ( 
-      <div className='content'>
+      <>
          <HomeBlock/>
          <h2>Наш <strong className="light">автопарк</strong></h2>
          <Filter cars={cars} filter={filter} setFilter={setFilter}/>
          <CarList cars={carsFilter}/>
-      </div>
+      </>
    );
 }
 

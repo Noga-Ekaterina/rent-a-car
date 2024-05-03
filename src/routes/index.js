@@ -3,7 +3,7 @@ import Car from "../pages/car/Car";
 import Comments from "../pages/Comments";
 import Contacts from "../pages/Contacts";
 import Home from "../pages/Home";
-import RentTerms from "../pages/RentTerms";
+import RentTerms from "../pages/rentTerms/RentTerms";
 
 export default [
    {path: "/rent-a-car/", element: <Home/>},
