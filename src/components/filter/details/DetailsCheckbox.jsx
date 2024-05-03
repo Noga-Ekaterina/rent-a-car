@@ -6,7 +6,7 @@ function DetailsChecbox({title, arr, name, changeCheck}) {
    const [isOpen, setIsOpen] = useState(false);
    const dropdownRef = useRef(null);
 
-   useClose(dropdownRef, isOpen, setIsOpen, 768);
+   useClose(dropdownRef, isOpen, setIsOpen, 1220);
    return ( 
       <div className={[cls.detailsCheckbox, isOpen && cls.open].join(" ")} ref={dropdownRef}>
          <div className={cls.detailsCheckbox__title} onClick={()=> setIsOpen(!isOpen)}>{title}</div>
