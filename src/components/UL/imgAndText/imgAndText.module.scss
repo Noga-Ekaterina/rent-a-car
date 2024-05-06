@@ -1,0 +1,30 @@
+@import "/src/style/medias";
+
+.imgAndText{
+  display: flex;
+  align-items: center;
+  gap: 27px;
+
+  @include t-u{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  @include t{
+    width: 48%;
+  }
+
+  @include xl{
+    max-width: 220px;
+  }
+
+  &__text{
+    font-size: 24px;
+  }
+
+  &__img{
+    @include xl{
+      height: 68px;
+    }
+  }
+}

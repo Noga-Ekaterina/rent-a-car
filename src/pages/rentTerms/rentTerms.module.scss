@@ -1,0 +1,80 @@
+@import "/src/style/medias";
+
+.rentTerms{
+  body:has(&){
+    background: #161616;
+  }
+
+  &__content{
+    min-height: 527px;
+    max-width: 970px;
+    margin: 20px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+  }
+
+  *{
+    position: relative;
+    z-index: 2;
+  }
+
+  &__garadient{
+    filter: blur(160px);
+    background: linear-gradient(165.17deg, rgba(93, 189, 179, 0.4) 17.166%,rgba(49, 150, 144, 0.4) 83.949%);
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+
+    @include t-u{
+      inset: 70px 120px;
+    }
+  }
+
+  &__items{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    @include mob{
+      flex-direction: column;
+    }
+
+    @include t{
+      max-width: 640px;
+    }
+  }
+
+  &__btn{
+    width: auto;
+    border: 1px solid rgb(248, 181, 0);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgb(239, 172, 0);
+    background: rgb(236, 215, 116);
+  }
+
+  &__img{
+    position: absolute;
+
+    @include mob{
+      bottom: -55vw;
+      right: 0;
+      width: 146%;
+    }
+
+    @include t{
+      position: relative;
+      width: 90%;
+    }
+
+    @include xl{
+      width: 82%;
+      bottom: -266px;
+      right: 50%;
+    }
+  }
+}
