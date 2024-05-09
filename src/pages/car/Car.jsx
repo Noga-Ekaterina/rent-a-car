@@ -14,7 +14,7 @@ function Car() {
    console.log(params);
    console.log(cars[10].id==params.id);
    return ( 
-      <div className={["content", cls.carPage].join(" ")}>
+      <div className={cls.carPage}>
          <div className={["noMob", cls.imgsAndBtn].join(" ")}>
             <CarImgs id={car.id}/>
             <Btn>Арендовать</Btn>

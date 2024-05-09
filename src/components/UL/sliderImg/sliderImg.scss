@@ -1,0 +1,25 @@
+@import "/src/style/medias";
+
+.sliderImgs{
+  .swiper-pagination{
+    position: static;
+    margin-top: 35px;
+
+    @include mob{
+      margin-top: 12px;
+    }
+
+    &-bullet{
+      background: rgba(196, 196, 196, 0.4);
+
+      @include xl{
+        width: 21px;
+        height: 21px;
+      }
+
+      &-active{
+        background: #FFFFFF;
+      }
+    }
+  }
+}

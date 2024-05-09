@@ -2,6 +2,11 @@
 .imgs{
    position: relative;
    z-index: 2;
+
+  @include mob{
+    margin-bottom: 30px;
+  }
+
    @include t-u {
       box-sizing: border-box;
       border: 1px solid #6b6b6b;
