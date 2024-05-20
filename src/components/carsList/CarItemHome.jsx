@@ -1,6 +1,6 @@
 import React from 'react';
-import CarTitle from '../UL/carTitle/CarTitle';
-import CarOptions from '../UL/carOptions/CarOptions';
+import CarTitle from '../UI/carTitle/CarTitle';
+import CarOptions from '../UI/carOptions/CarOptions';
 import { useNavigate } from 'react-router-dom';
 import { findMin } from '../../utils/findMin';
 

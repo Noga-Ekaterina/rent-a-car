@@ -1,12 +1,12 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import cars from '../../API/cars.json'
-import CarTitle from '../../components/UL/carTitle/CarTitle';
+import CarTitle from '../../components/UI/carTitle/CarTitle';
 import cls from "./car.module.scss"
 import CarImgs from './carImgs/CarImgs';
-import CarOptions from '../../components/UL/carOptions/CarOptions';
-import CarPrice from '../../components/UL/carPrice/CarPrice';
-import Btn from '../../components/UL/btn/Btn';
+import CarOptions from '../../components/UI/carOptions/CarOptions';
+import CarPrice from '../../components/UI/carPrice/CarPrice';
+import Btn from '../../components/UI/btn/Btn';
 
 function Car() {
    const params = useParams()

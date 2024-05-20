@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import cls from "./carImgs.module.scss"
-import SliderImg from "../../../components/UL/sliderImg/SliderImg";
+import SliderImg from "../../../components/UI/sliderImg/SliderImg";
 
 function CarImgs({id, newCls}) {
    const [bigImg, setBigImg] = useState(1);

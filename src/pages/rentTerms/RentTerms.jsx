@@ -5,8 +5,8 @@ import driver from './img/driver-license.svg'
 import age from "./img/age.svg"
 import steering from "./img/steering-wheel.svg";
 import car from "./img/car.png"
-import ImgAndText from "../../components/UL/imgAndText/ImgAndText";
-import Btn from "../../components/UL/btn/Btn";
+import ImgAndText from "../../components/UI/imgAndText/ImgAndText";
+import Btn from "../../components/UI/btn/Btn";
 
 function RentTerms() {
    return ( 

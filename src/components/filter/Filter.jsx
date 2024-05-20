@@ -1,6 +1,6 @@
 import React, {useRef, useState} from 'react';
 import cls from "./filter.module.scss"
-import Btn from '../UL/btn/Btn';
+import Btn from '../UI/btn/Btn';
 import DetailsChecbox from './details/DetailsCheckbox';
 import InputsMinMax from './inputsMinMax/InputsMinMax';
 import {useClose} from "../../hoocs/useClose";
